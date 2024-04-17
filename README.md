@@ -81,7 +81,7 @@ The component must create a DOM element of the following structure:
 
 ### Example of usage
 
-```html
+```JSX
 import user from 'path/to/user.json;
 
 <Profile
@@ -138,7 +138,7 @@ The component must create a DOM element of the following structure:
 
 ### Example of usage
 
-```html
+```JSX
 import data from '/path/to/data.json';
 
 <Statistics title="Upload stats" stats={data} />
@@ -187,7 +187,7 @@ The component must create a DOM of the following structure.
 
 ### Example of usage
 
-```html
+```JSX
 import friends from 'path/to/friends.json';
 
 <FriendList friends={friends} />;
@@ -239,7 +239,7 @@ We need to create a component `TransactionHistory` that accepts one prop `items`
 
 ### Example of usage
 
-```html
+```JSX
 import transactions from 'path/to/transactions.json';
 
 <TransactionHistory items={transactions} />;
