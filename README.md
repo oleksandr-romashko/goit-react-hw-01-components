@@ -11,7 +11,7 @@ The live page for this repository can be viewed at [GitHub Pages](https://oleksa
   1. Make sure you have an LTS version of Node.js installed on your computer. [Download and install](https://nodejs.org/en/) if needed.
   1. Install the project's base dependencies with the `npm install` command.
   1. Start development mode by running the `npm start` command.
-  1. Go to [http://localhost:3000](http://localhost:3000]) in your browser. This page will automatically reload after saving changes to the project files.
+  2. Go to [localhost:3000](http://localhost:3000/) in your browser. This page will automatically reload after saving changes to the project files.
 
 ## Tasks Acceptance Criteria
 
