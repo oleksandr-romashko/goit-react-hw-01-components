@@ -8,6 +8,7 @@
   /* COLORS */
   --color-user-section-background: #e7ecf2;
   --color-profile-primary-black: #122236;
+  --color-profile-primary-white: #fff;
   --color-profile-secondary-gray: #768696;
   --color-profile-accent-blue: #e4e9f0;
   --color-profile-accent-light-blue: #f3f6f9;
@@ -35,7 +36,7 @@
   font-style: normal;
 
   border-radius: 4px;
-  background: #fff;
+  background: var(--color-profile-primary-white);
   box-shadow: 0px 1px 3px 1px #cad5e3;
   overflow: hidden;
 }
