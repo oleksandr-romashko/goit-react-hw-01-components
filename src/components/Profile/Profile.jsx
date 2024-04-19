@@ -23,15 +23,27 @@ export const Profile = ({
       <ul className={css.stats}>
         <li>
           <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{formatThousandSaparatorNumber(stats.followers)}</span>
+          <span
+            key="quantity-followers"
+            className={css.quantity}>
+            {formatThousandSaparatorNumber(stats.followers)}
+          </span>
         </li>
         <li>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>{formatThousandSaparatorNumber(stats.views)}</span>
+          <span
+            key="quantity-views"
+            className={css.quantity}>
+            {formatThousandSaparatorNumber(stats.views)}
+          </span>
         </li>
         <li>
           <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{formatThousandSaparatorNumber(stats.likes)}</span>
+          <span
+            key="quantity-likes"
+            className={css.quantity}>
+            {formatThousandSaparatorNumber(stats.likes)}
+          </span>
         </li>
       </ul>
     </div>
