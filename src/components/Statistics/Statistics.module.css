@@ -66,11 +66,30 @@
 .item {
   box-sizing: border-box;
 
-  width: calc(100% / 5);
+  /* max items in a row is limited
+     all items over this limit will be wrapped to a new line */
+  width: calc(100% / 4);
   display: flex;
   flex-direction: column;
   row-gap: 1px;
   padding: 5px 4px 10px 4px;
+}
+
+/* case when only one item */
+.item:first-child:nth-last-child(1) {
+  width: calc(100%);
+}
+
+/* case when only two items */
+.item:first-child:nth-last-child(2),
+.item:first-child:nth-last-child(2) ~ .item {
+  width: calc(100% / 2);
+}
+
+/* case when only three items */
+.item:first-child:nth-last-child(3),
+.item:first-child:nth-last-child(3) ~ .item {
+  width: calc(100% / 3);
 }
 
 .label {
