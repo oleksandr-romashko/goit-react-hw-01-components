@@ -1,11 +1,12 @@
 import css from "./Profile.module.css"
 import { formatThousandSaparatorNumber } from "helpers/formatThousandSaparatorNumber";
+import noAvatar from "img/no-image.png";
 
 export const Profile = ({
   username,
   tag,
   location,
-  avatar = "https://cdn-icons-png.flaticon.com/512/1077/1077012.png",
+  avatar = noAvatar,
   stats }) => (
   <section className={css.user}>
     <div className={css.profile}>

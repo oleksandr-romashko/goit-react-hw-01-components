@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Khmer OS';
+  src: url('./../../fonts/KhmerOS.ttf') format('truetype');
+}
+
+:root {
+  /* COLORS */
+  --color-friends-section-background: #fff;
+  --color-friends-primary-black: #000;
+  --color-friends-primary-white: #fff;
+}
+
+.friends {
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-statistics-primary-black);
+  font-family: 'Khmer OS', sans-serif;
+  font-style: normal;
+
+  background-color: var(--color-friends-section-background);
+}
+
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  padding: 11px 7px 17px 15px;
+  row-gap: 16px;
+  background: var(--color-friends-primary-white);
+}
