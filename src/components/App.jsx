@@ -1,7 +1,8 @@
 import {
   Profile,
   Statistics,
-  FriendList
+  FriendList,
+  TransactionHistory
 } from "components";
 
 import css from "./App.module.css";
@@ -9,6 +10,7 @@ import css from "./App.module.css";
 import user from "data/user.json";
 import data from "data/data.json";
 import friends from "data/friends.json";
+import transactions from "data/transactions.json";
 
 export const App = () => {
   return (
@@ -27,6 +29,7 @@ export const App = () => {
       Task 3 - FriendList
       <FriendList friends={friends} />
       Task 4 - Transaction History
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

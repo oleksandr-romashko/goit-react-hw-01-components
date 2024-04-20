@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('./../../fonts/Lato-Regular.ttf') format('truetype'),
+    url('./../../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+:root {
+  /* COLORS */
+  --color-statistics-section-background: #ffffff;
+  --color-statistics-primary-gray: #768696;
+  --color-statistics-primary-white: #ffffff;
+  --color-transactions-accent-light-blue: #00bcd5;
+  --color-transactions-accent-light-gray: #ecf1f4;
+}
+
+.transactions {
+  width: 100%;
+  padding-top: 36px;
+  padding-bottom: 40px;
+
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+.transaction-history {
+  width: 100%;
+  max-width: 872px;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  border-radius: 6px;
+  overflow: hidden;
+
+  background: var(--color-statistics-primary-white);
+  box-shadow: 0px 3px 3px 0px rgba(118, 134, 150, 0.3);
+}
+
+thead {
+  color: var(--color-statistics-primary-white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  background-color: var(--color-transactions-accent-light-blue);
+}
+
+tbody {
+  color: var(--color-statistics-primary-gray);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+tbody > tr:nth-child(2n) {
+  background-color: var(--color-transactions-accent-light-gray);
+}
+
+th,
+td {
+  box-sizing: border-box;
+  height: 50px;
+  border: 1px solid rgba(118, 134, 150, 0.2);
+}
+
+td:first-child {
+  text-transform: capitalize;
+}
