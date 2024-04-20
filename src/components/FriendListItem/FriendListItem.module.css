@@ -31,6 +31,10 @@
   height: 96px;
   border-radius: 7px;
   object-fit: cover;
+
+  /* Display alt text in the center of the image */
+  font-size: 14px;
+  line-height: 96px;
 }
 
 .name {

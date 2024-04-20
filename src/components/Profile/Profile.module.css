@@ -57,7 +57,6 @@
   background-color: var(--color-profile-accent-light-blue);
   /* Display alt text in the center of the image */
   line-height: 97px;
-  text-align: center;
 }
 
 .name {
