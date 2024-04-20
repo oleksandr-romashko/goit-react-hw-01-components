@@ -10,6 +10,7 @@
   --color-statistics-primary-black: #122236;
   --color-statistics-primary-white: #fff;
   --color-statistics-secondary-gray: #768696;
+  --color-statistics-accent-light-blue: #f3f6f9;
 }
 
 .statistics {
@@ -68,9 +69,10 @@
 
   /* max items in a row is limited
      all items over this limit will be wrapped to a new line */
-  width: calc(100% / 4);
+  width: calc(100% / 5);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   row-gap: 1px;
   padding: 5px 4px 10px 4px;
 }
@@ -90,6 +92,12 @@
 .item:first-child:nth-last-child(3),
 .item:first-child:nth-last-child(3) ~ .item {
   width: calc(100% / 3);
+}
+
+/* case when only four items */
+.item:first-child:nth-last-child(4),
+.item:first-child:nth-last-child(4) ~ .item {
+  width: calc(100% / 4);
 }
 
 .label {
