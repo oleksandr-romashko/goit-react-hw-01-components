@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-01-components%20/static/css/main.f65c3423.css",
-    "main.js": "/goit-react-hw-01-components%20/static/js/main.3d1d1104.js",
+    "main.css": "/goit-react-hw-01-components%20/static/css/main.4251e790.css",
+    "main.js": "/goit-react-hw-01-components%20/static/js/main.93a68fab.js",
     "static/media/KhmerOS.ttf": "/goit-react-hw-01-components%20/static/media/KhmerOS.3b2dec7fa3c4927c619b.ttf",
     "static/media/Lato-Regular.ttf": "/goit-react-hw-01-components%20/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
     "static/media/Lato-Bold.ttf": "/goit-react-hw-01-components%20/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
     "static/media/no-image.png": "/goit-react-hw-01-components%20/static/media/no-image.961568814dceb733c85a.png",
     "index.html": "/goit-react-hw-01-components%20/index.html",
-    "main.f65c3423.css.map": "/goit-react-hw-01-components%20/static/css/main.f65c3423.css.map",
-    "main.3d1d1104.js.map": "/goit-react-hw-01-components%20/static/js/main.3d1d1104.js.map"
+    "main.4251e790.css.map": "/goit-react-hw-01-components%20/static/css/main.4251e790.css.map",
+    "main.93a68fab.js.map": "/goit-react-hw-01-components%20/static/js/main.93a68fab.js.map"
   },
   "entrypoints": [
-    "static/css/main.f65c3423.css",
-    "static/js/main.3d1d1104.js"
+    "static/css/main.4251e790.css",
+    "static/js/main.93a68fab.js"
   ]
 }
