@@ -14,7 +14,6 @@
 }
 
 .statistics {
-  width: 100%;
   padding-top: 61px;
   padding-bottom: 61px;
   margin-left: auto;
@@ -28,8 +27,6 @@
   color: var(--color-statistics-primary-black);
   font-family: 'Lato', sans-serif;
   font-style: normal;
-
-  background-color: var(--color-user-section-background);
 }
 
 .statistics > :first-child {

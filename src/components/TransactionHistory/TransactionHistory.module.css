@@ -6,20 +6,10 @@
 
 :root {
   /* COLORS */
-  --color-statistics-section-background: #ffffff;
   --color-statistics-primary-gray: #768696;
   --color-statistics-primary-white: #ffffff;
   --color-transactions-accent-light-blue: #00bcd5;
   --color-transactions-accent-light-gray: #ecf1f4;
-}
-
-.transactions {
-  width: 100%;
-  padding-top: 36px;
-  padding-bottom: 40px;
-
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
 }
 
 .transaction-history {
@@ -30,12 +20,16 @@
 
   margin-left: auto;
   margin-right: auto;
+  padding-top: 36px;
+  padding-bottom: 40px;
+
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
   text-align: center;
 
   border-radius: 6px;
   overflow: hidden;
 
-  background: var(--color-statistics-primary-white);
   box-shadow: 0px 3px 3px 0px rgba(118, 134, 150, 0.3);
 }
 

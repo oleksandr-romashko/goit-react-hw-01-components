@@ -6,7 +6,6 @@
 
 :root {
   /* COLORS */
-  --color-user-section-background: #e7ecf2;
   --color-profile-primary-black: #122236;
   --color-profile-primary-white: #fff;
   --color-profile-secondary-gray: #768696;
@@ -14,16 +13,8 @@
   --color-profile-accent-light-blue: #f3f6f9;
 }
 
-.user {
-  width: 100%;
-  padding-top: 87px;
-  padding-bottom: 87px;
-  background-color: var(--color-user-section-background);
-}
-
 .profile {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 87px auto;
   display: flex;
   flex-direction: column;
   width: 250px;

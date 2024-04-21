@@ -5,14 +5,11 @@
 
 :root {
   /* COLORS */
-  --color-friends-section-background: #fff;
   --color-friends-primary-black: #000;
   --color-friends-primary-white: #fff;
 }
 
 .friends {
-  width: 100%;
-
   margin-left: auto;
   margin-right: auto;
 
@@ -24,8 +21,6 @@
   color: var(--color-statistics-primary-black);
   font-family: 'Khmer OS', sans-serif;
   font-style: normal;
-
-  background-color: var(--color-friends-section-background);
 }
 
 .friend-list {
