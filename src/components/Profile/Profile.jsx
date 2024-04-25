@@ -4,7 +4,8 @@ import css from "./Profile.module.css";
 import noAvatar from "img/no-image.png";
 
 /**
- * A User profile React component with basic information about the user, contacts and statistics.
+ * A User profile React component which display information about a social network user.
+ * Profile conains avatar, user name, contacts and statistics information.
  * 
  * @param {string} props.username User name.
  * @param {string} props.tag Social network tag without '@'.
