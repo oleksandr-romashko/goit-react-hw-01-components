@@ -10,7 +10,7 @@ import noAvatar from "img/no-image.png";
  * @param {string} props.username User name.
  * @param {string} props.tag Social network tag without '@'.
  * @param {string} props.location City and country.
- * @param {string} props.avatar Link to avatar image.
+ * @param {string=noAvatar} props.avatar Link to avatar image. If no avatar - replaced with defauld image.
  * @param {object} props.stats Object with information about activity.
  * @param {number} props.stats.followers Number of followers.
  * @param {number} props.stats.views Number of views.
@@ -23,7 +23,7 @@ export const Profile = ({
   tag,
   location,
   avatar = noAvatar,
-  stats }) => (
+  stats = {} }) => (
     <div className={css.profile}>
       <div className={css.description}>
         <img
