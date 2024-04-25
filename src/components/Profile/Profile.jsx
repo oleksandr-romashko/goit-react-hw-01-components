@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { formatThousandSaparatorNumber } from "helpers/formatThousandSaparatorNumber";
-import css from "./Profile.module.css"
+import css from "./Profile.module.css";
 import noAvatar from "img/no-image.png";
 
 /**
@@ -74,4 +74,4 @@ Profile.propTypes = {
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
   }).isRequired,
-}
+};
