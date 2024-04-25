@@ -9,24 +9,16 @@
   --color-friends-primary-white: #fff;
 }
 
-.friends {
+.friend-list {
   margin-left: auto;
   margin-right: auto;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: fit-content;
 
-  color: var(--color-statistics-primary-black);
-  font-family: 'Khmer OS', sans-serif;
-  font-style: normal;
-}
-
-.friend-list {
   display: flex;
   flex-direction: column;
   padding: 11px 11px 17px 11px;
   row-gap: 16px;
+
   background: var(--color-friends-primary-white);
 }
