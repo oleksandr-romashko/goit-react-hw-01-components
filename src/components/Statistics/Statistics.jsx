@@ -1,5 +1,6 @@
-import css from "./Statistics.module.css";
+import PropTypes from "prop-types";
 import { getRandomApprovedColor } from "helpers/getRandomColor"
+import css from "./Statistics.module.css";
 
 /**
  * These colors were selected to have better contrast 
@@ -14,6 +15,17 @@ const approvedConstrastColors = [
   "#5F66DA", "#C52D8C", "#E99FC8", "#CB8013",
 ]
 
+/**
+ * A Statistics React component which displays statistics on the transferred props.
+ * For example, uploads to the cloud by file type, webpage visits by users from different countries, financial expenses, etc.
+ * 
+ * Each statistic element obtains pseudo random background color of approved contrast colors.
+ * 
+ * @param {string} [title] Optional parameter used to display statistics title.
+ * @param {Object[]} stats Array of statistics objects.
+ * 
+ * @returns Statistics React component.
+ */
 export const Statistics = ({title, stats=[]}) => (
   <section className={css.statistics}>
     {title && (<h2 className={css.title}>Upload stats</h2>)}
@@ -32,3 +44,15 @@ export const Statistics = ({title, stats=[]}) => (
     </ul>
 </section>
 );
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.exact(
+      {
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+      }
+    ).isRequired),
+};
