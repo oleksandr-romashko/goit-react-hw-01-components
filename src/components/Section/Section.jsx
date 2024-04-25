@@ -4,9 +4,9 @@ import css from "./Section.module.css";
 /**
  * A Section React component defines a section in a document for separating various parts of the content.
  * 
- * @param {string} name The name of the section, which is used for styles in CSS as a selector name.
- * @param {string} [title] Optional parameter used to display section title.
- * @param {React.Component | React.Component[]} [children] Section children component or components. 
+ * @param {string} props.name The name of the section, which is used for styles in CSS as a selector name.
+ * @param {string} [props.title] Optional parameter used to display section title.
+ * @param {React.Component | React.Component[]} [props.children] Section children component or components. 
  * 
  * @returns Section React component with optional chidren elements.
  */
