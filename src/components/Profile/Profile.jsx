@@ -1,7 +1,22 @@
-import css from "./Profile.module.css"
+import PropTypes from "prop-types";
 import { formatThousandSaparatorNumber } from "helpers/formatThousandSaparatorNumber";
+import css from "./Profile.module.css"
 import noAvatar from "img/no-image.png";
 
+/**
+ * A User profile React component with basic information about the user, contacts and statistics.
+ * 
+ * @param {string} props.username User name.
+ * @param {string} props.tag Social network tag without '@'.
+ * @param {string} props.location City and country.
+ * @param {string} props.avatar Link to avatar image.
+ * @param {object} props.stats Object with information about activity.
+ * @param {number} props.stats.followers Number of followers.
+ * @param {number} props.stats.views Number of views.
+ * @param {number} props.stats.likes Number of likes.
+ * 
+ * @returns {React.Component} Profile React component.
+ */
 export const Profile = ({
   username,
   tag,
@@ -48,3 +63,15 @@ export const Profile = ({
       </ul>
     </div>
 );
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
+}
