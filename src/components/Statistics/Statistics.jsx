@@ -21,8 +21,8 @@ const approvedConstrastColors = [
  * 
  * Each statistic element obtains pseudo random background color of approved contrast colors.
  * 
- * @param {string} [title] Optional parameter used to display statistics title.
- * @param {Object[]} stats Array of statistics objects.
+ * @param {string} [props.title] Optional parameter used to display statistics title.
+ * @param {Object[]} props.stats Array of statistics objects.
  * 
  * @returns Statistics React component.
  */
