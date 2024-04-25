@@ -42,7 +42,7 @@ export const Statistics = ({title, stats=[]}) => (
         </li>
       ))}
     </ul>
-</section>
+  </section>
 );
 
 Statistics.propTypes = {
