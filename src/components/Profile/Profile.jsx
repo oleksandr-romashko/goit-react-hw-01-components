@@ -10,7 +10,7 @@ import noAvatar from "img/no-image.png";
  * @param {string} props.username User name.
  * @param {string} props.tag Social network tag without '@'.
  * @param {string} props.location City and country.
- * @param {string=noAvatar} props.avatar Link to avatar image. If no avatar - replaced with defauld image.
+ * @param {string} [props.avatar=noAvatar] Link to avatar image. If no avatar - replaced with defauld image.
  * @param {object} props.stats Object with information about activity.
  * @param {number} props.stats.followers Number of followers.
  * @param {number} props.stats.views Number of views.
@@ -69,7 +69,7 @@ Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
   stats: PropTypes.exact({
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
